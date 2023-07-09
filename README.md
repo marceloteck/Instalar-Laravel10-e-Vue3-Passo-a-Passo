@@ -348,7 +348,7 @@ Route::get('/{any}', function () {
 
 # #MÃOS A OBRA
 
-Agora que está tudo configurado é só execultar o seguinte código no terminal e conseguirar trabalhar com vue e laravel ao mesmo tempo em seu pc.
+Agora que está tudo configurado é só execultar o seguinte código no terminal e começar a trabalhar com vue e laravel ao mesmo tempo em seu pc.
 
 ```
 npm rum dev
