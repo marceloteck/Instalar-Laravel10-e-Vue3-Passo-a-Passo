@@ -78,6 +78,7 @@ git clone https://github.com/marceloteck/Instalar-Laravel10-e-Vue3-Passo-a-Passo
 
 Depois de baixado, basta copiar os diretorios e o arquivo: ```vite.config.js``` para a pasta principal do seu projeto, que os arquivos serão substituidos e adicionados conforme as indicações abaixo.
 <br>
+<br>
 
 
 ### Configuração Manual
