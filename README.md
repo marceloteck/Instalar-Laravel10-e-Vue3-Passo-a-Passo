@@ -187,21 +187,29 @@ Agora que criamos nosso diretório vamos terminar de fazer nossas configuraçõe
 
 No diretório ```resources/js/app.js``` deve ficar assim:
 
-> Já está sendo iMportado o vue.js e o vue router
 
->Observe que nossas configurações de roteamento e componentes estão acontecendo aqui dentro
+> Observe estamos importando os aquivos router.js e o components.js
 
 ```
 import './bootstrap';
 
-// importando o vue.js
-import { createApp } from 'vue/dist/vue.esm-bundler';
+import router from './router'; // Importando as configurações de roteamento do arquivo router.js
+import app from './components'; // Importando a instância do aplicativo do arquivo components.js
 
+// Usar o roteamento
+app.use(router);
+
+// Montar o aplicativo
+app.mount("#app");
+```
+<br>
+
+No arquivo: <br>  ``` resources/js/router.js ```
+vamos fazer assim:
+
+```
 // importando o vue router
 import { createRouter, createWebHistory } from 'vue-router/dist/vue-router.esm-bundler.js';
-
-// Importar componentes (menu para o roteamento)
-import menudir from "./components/menudir.vue";
 
 // importar paginas do router (Páginas de exemplo)
 import login from "./view/pages/login.vue";
@@ -222,18 +230,30 @@ const router = createRouter({
     ],
 });
 
-// Criar instância do aplicativo
-const app = createApp({});
-
-// Registrar os componentes
-app.component('menudir', menudir); // <menudir />
-
-// Usar o roteamento
-app.use(router);
-
-// Montar o aplicativo
-app.mount("#app");
+export default router; 
 ```
+<br> 
+
+E no arquivo: <br>  ``` resources/js/components.js ```
+vamos fazer assim:
+
+```
+// importando o vue.js
+import { createApp } from 'vue/dist/vue.esm-bundler';
+
+// Importar componentes (menu para o roteamento)
+import menudir from "./components/menudir.vue";
+import navheader from "./components/navheader.vue";
+
+const app = createApp({});
+app.component('menudir', menudir);
+app.component('navheader', navheader);
+
+export default app;
+
+```
+
+## Agora vamos para os arquivos ```.blade.php```
 
 No arquivo: <br>  ```resources/js/view/pages/components/menudir.vue```
  vamos fazer assim:
