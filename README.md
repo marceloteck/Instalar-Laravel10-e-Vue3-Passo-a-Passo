@@ -250,7 +250,7 @@ app.component('menudir', menudir);
 export default app;
 ```
 
-## Agora vamos para os arquivos ```.blade.php```
+## Agora vamos para os arquivos ```.blade.php``` e ``` .vue ```
 
 No arquivo: <br>  ```resources/js/view/pages/components/menudir.vue```
  vamos fazer assim:
