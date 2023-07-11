@@ -2,7 +2,7 @@
 <br>
 <div align="center">
   
-[Home](https://github.com/marceloteck/LaravelVue/edit/main/README.md) 
+[Voltar ao git principal](https://github.com/marceloteck/LaravelVue/edit/main/README.md) 
 
 </div>
 
