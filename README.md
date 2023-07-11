@@ -1,5 +1,12 @@
 # Criando projeto Laravel 10 + Vue 3 (Passo a Passo) com Router Vue
 <br>
+<div align="center">
+  
+[Home](https://github.com/marceloteck/LaravelVue/edit/main/README.md) 
+
+</div>
+
+<br>
 
 ![Vue+Laravel](https://raw.githubusercontent.com/marceloteck/LaravelVue/main/image/vue%2Blaravel-img.png)
 
