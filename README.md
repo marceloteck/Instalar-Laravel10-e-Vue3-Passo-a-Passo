@@ -111,10 +111,15 @@ export default defineConfig({
                 },
             },
         }),
-
-
     ],
+    resolve: {
+        alias: {
+          '@': 'resources/js',
+        },
+      },
+
 });
+
 ```
 <br>
 O arquivo vite.config.js está localizado no caminho raiz do projeto:<br>
