@@ -11,9 +11,30 @@ import NotFound from './view/errors/404.vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/', component: home },
-        { path: '/login', component: login },
-        { path: '/cadastro', component: cadastro },
+        {
+            path: '/', 
+            component: home, 
+            name: 'Home', 
+            meta: { 
+                title: 'Página Inicial',
+            }
+        },
+        {
+            path: '/login', 
+            component: login, 
+            name: 'login', 
+            meta: { 
+                title: 'Página de login',
+            }
+        },
+        {
+            path: '/cadastro', 
+            component: cadastro, 
+            name: 'cadastro', 
+            meta: { 
+                title: 'Página de cadastro',
+            }
+        },
 
         // roteamento para quando a pagina não foi encontrada:
         { path: '/:catchAll(.*)', component: NotFound },
