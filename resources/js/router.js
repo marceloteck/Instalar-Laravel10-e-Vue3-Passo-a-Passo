@@ -20,4 +20,14 @@ const router = createRouter({
     ],
 });
 
+// alterar o titulo do site dinamicamente
+router.beforeEach((to, from, next) => {
+    router.beforeEach((to, from, next) => {
+        // Define o título da página com base na meta da rota ou usa um título padrão
+        document.title = to.meta.title ? to.meta.title + ' - Meu Site' : 'Meu Site'; 
+        next();
+      });
+    next(); // Define o título da página com base na meta da rota
+  });
+
 export default router; 
