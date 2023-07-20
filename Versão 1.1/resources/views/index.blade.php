@@ -1,19 +1,13 @@
-@extends('html')
-@section('metaTags')
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
     @include('componetsPage/metatags')
-@endsection
-
-@section('LinkCss')
-    @include('componetsPage/linkCss')
-@endsection
-
-@section('body')
+    @include('componetsPage/globalCss')
+</head>
+<body>
     <div id="app-root">
-        <routerviewpage />
+        <routerviewpage /> {{-- chamada da pagina routerview com a gif de carregamento com vue.js --}}
     </div>
-@endsection
-
-@section('LinkJs')
-    @include('componetsPage/linkJs')
-@endsection
-
+    @include('componetsPage/globalJs')
+</body>
+</html>

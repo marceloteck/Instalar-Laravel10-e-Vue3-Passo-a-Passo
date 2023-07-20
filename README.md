@@ -8,8 +8,9 @@
 
 <br>
 
+<!--
 ![Vue+Laravel](https://raw.githubusercontent.com/marceloteck/LaravelVue/main/image/vue%2Blaravel-img.png)
-
+-->
 
 <br>
 
@@ -65,7 +66,6 @@ Com ele vamos conseguir gerar tokens para segurança do nosso login
 ```
 composer require firebase/php-jwt
 ```
-
 
 Agora executamos o seguinte:
 ```

@@ -4,4 +4,4 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <link rel="icon" type="image/x-icon" href="https://sb-ui-kit-pro.startbootstrap.com/assets/img/favicon.png" />
-<title>Notificação - Adepará</title> {{-- titulo padrão --}}
+<title></title> {{-- titulo padrão em branco, configuração na rota do vue.js --}}

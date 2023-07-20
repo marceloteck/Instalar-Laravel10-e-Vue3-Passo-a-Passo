@@ -3,8 +3,7 @@
         <div id="layoutDefault_content">
             <main>
                 <navbar />
-                <theheader />
-                <indexview />
+                <up_exel /> <!-- componentes-->
             </main>
         </div>
         <div id="layoutDefault_footer">
@@ -12,11 +11,3 @@
         </div>        
     </div>
 </template>
-
-<script>
-
-</script>
-
-<style scoped>
-
-</style>

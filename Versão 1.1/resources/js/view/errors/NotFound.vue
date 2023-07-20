@@ -4,6 +4,7 @@
           <main>
               <navbar />
               <theheader />
+              <!--CONTEUDO-->
               <div>
                 <section class="bg-light py-10">
                   <div class="container-fluid px-5">
@@ -14,6 +15,7 @@
                   </section>
                 
               </div>
+              <!--CONTEUDO-->
           </main>
       </div>
       <div id="layoutDefault_footer">
@@ -21,11 +23,3 @@
       </div>        
   </div>
 </template>
-
-<script>
-
-</script>
-
-<style scoped>
-
-</style>

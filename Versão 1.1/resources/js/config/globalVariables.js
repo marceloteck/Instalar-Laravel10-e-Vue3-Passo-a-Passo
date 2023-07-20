@@ -2,8 +2,9 @@ import { reactive } from 'vue';
 
 // Defina suas variáveis globais aqui
 const globalVariables = reactive({
+  // executar: php artisan storage:link
   appName: 'Meu Aplicativo',
-  imagePath: '/storage/img/',
+  storagePath: '/storage/',
 });
 
 export default globalVariables;

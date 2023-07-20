@@ -4,7 +4,7 @@
             <main>
                 <navbar />
                 <theheader />
-                <homeview />
+                <homeview /> <!-- componentes-->
             </main>
         </div>
         <div id="layoutDefault_footer">

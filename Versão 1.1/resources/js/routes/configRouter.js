@@ -13,7 +13,7 @@ router.beforeEach(async (to, from, next) => {
     // saber quando a página está carregando
     isLoadingStore.commit('setIsLoading', true);
     // Define o título da página com base na meta da rota ou usa um título padrão
-    document.title = to.meta.title ? to.meta.title + ' - Adepará' : 'Adepará'; 
+    document.title = to.meta.title ? to.meta.title + ' - nome do Meu site' : ' nome do Meu site'; 
 
     if(to.meta?.auth){
         const auth = UseAuthLogin();

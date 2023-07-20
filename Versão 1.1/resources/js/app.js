@@ -6,16 +6,8 @@ import pinia from './config/Pinia'; // Importando o arquivo pinia.js
 import isLoadingStore from './config/isLoadingStore'; // gif de carregamento
 import globalVariables from './config/globalVariables'; // variaveis global da aplicação
 
-// Usar o Pinia
-app.use(pinia);
-
-// Usar o roteamento
-app.use(router);
-
-app.use(isLoadingStore);
-
-// Use o mixin global
-app.mixin(globalVariables);
-
-// Montar o aplicativo
-app.mount("#app-root");
+app.use(pinia); // Usar o Pinia
+app.use(router); // Usar o roteamento
+app.use(isLoadingStore); // gif de carregamento
+app.mixin(globalVariables);// Use o mixin global (Variaveis globais)
+app.mount("#app-root"); // Montar o aplicativo

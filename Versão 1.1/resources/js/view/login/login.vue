@@ -39,16 +39,13 @@
                         </div>
                         <br>
                             <br>
-                        <span class="errLong">
-                              {{ msg.errorLogin }}
-                        </span>
                     </fieldset>
                     </form>
 
                 </div> <!-- end login -->
                 <div><!--class="logo"-->
                   <router-link :to="{name: 'index.Home'}" class="logo">
-                    Adepará
+                    LOGO
                   </router-link>
                 </div>
                 
@@ -69,18 +66,14 @@ const authLogin = UseAuthLogin();
 const router = useRouter();
 
 const user = reactive({
-  email: 'marcellosh12@gmail.com',
-  password: '123456789',
+  email: '',
+  password: '',
   lembrarMe: false
-});
-
-const msg = reactive({
-  errorLogin: ''
 });
 
 async function Auth() {
   try {
-    const { data } = await http.post('/loginUser', user);
+    const { data } = await http.post('/loginUser', user); // CHAMA A ROTA NO LARAVEL
     if (data?.token) {
       authLogin.setToken(data.token);
       authLogin.setUser(data.user);
