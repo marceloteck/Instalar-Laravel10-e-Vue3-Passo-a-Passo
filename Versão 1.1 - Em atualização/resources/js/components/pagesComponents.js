@@ -1,16 +1,10 @@
 // Importar componentes das páginas
-import indexview        from "@/view/contents/indexview.vue";
 import homeview         from "@/view/contents/homeview.vue";
-import navprodutores    from "@/view/contents/navprodutores.vue";
-import up_exel          from "@/view/contents/up-exel.vue";
-import toolsView        from "@/view/contents/toolsView.vue";
-import navtools         from "@/view/contents/navtools.vue";
+import menu1view            from "@/view/contents/menu1.vue";
+import pagina01view          from "@/view/contents/pagina01.vue";
 
 export{
-    indexview,
+    menu1view,
     homeview,
-    navprodutores,
-    up_exel,
-    toolsView ,
-    navtools
+    pagina01view
 }

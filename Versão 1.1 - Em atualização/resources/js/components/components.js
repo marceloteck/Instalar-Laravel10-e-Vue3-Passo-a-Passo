@@ -6,11 +6,11 @@ const app = createApp({});
 import * as hc from '@/components/headerComponents.js';
 import * as pc from '@/components/pagesComponents.js';
 
-const { navbar, theheader, thefooter, routerviewpage }  = hc;
-const { indexview, homeview, navprodutores, up_exel, toolsView, navtools }   = pc;
+const { navbar, thefooter, routerviewpage }  = hc;
+const { menu1view, homeview, pagina01view }   = pc;
 
-const headerMap = { navbar, theheader, thefooter, routerviewpage };
-const PagesMap  = { indexview, homeview, navprodutores, up_exel, toolsView, navtools };
+const headerMap = { navbar, thefooter, routerviewpage };
+const PagesMap  = { menu1view, homeview, pagina01view };
 
 // constante Map
 const combinedMap = {

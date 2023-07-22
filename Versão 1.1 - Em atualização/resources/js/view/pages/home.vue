@@ -3,7 +3,6 @@
         <div id="layoutDefault_content">
             <main>
                 <navbar />
-                <theheader />
                 <homeview /> <!-- componentes-->
             </main>
         </div>

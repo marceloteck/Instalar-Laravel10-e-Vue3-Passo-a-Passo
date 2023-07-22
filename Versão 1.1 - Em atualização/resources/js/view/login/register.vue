@@ -42,7 +42,7 @@
                   </div> <!-- end login -->
                   <div><!--class="logo"-->
                     <router-link to="/" class="logo">
-                      LOGO
+                      Adepará
                     </router-link>
                   </div>
               
@@ -69,7 +69,7 @@ const router = useRouter();
 
 async function cadastarUser(){
 try {
-  const {data} = await http.post('/registerUser', user); // CHAMA A ROTA NO LARAVEL
+  const {data} = await http.post('/registerUser', user);
   Swal.mixin({
         toast: true,
       }).fire({

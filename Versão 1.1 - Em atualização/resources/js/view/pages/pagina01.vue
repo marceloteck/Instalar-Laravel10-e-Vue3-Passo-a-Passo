@@ -3,7 +3,7 @@
         <div id="layoutDefault_content">
             <main>
                 <navbar />
-                <up_exel /> <!-- componentes-->
+                <pagina01view /> <!-- componentes-->
             </main>
         </div>
         <div id="layoutDefault_footer">
