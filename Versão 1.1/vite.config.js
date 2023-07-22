@@ -19,15 +19,7 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            //resources
             '@': 'resources/js',
-            '@components': 'resources/js/components',
-            '@config': 'resources/js/config',
-            '@routes': 'resources/js/routes',
-            '@view': 'resources/js/view',
-            
-            //storage 
-            '@storagePath': 'storage/',
         },
       },
 
