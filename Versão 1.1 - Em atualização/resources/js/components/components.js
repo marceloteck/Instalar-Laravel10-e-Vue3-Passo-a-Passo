@@ -3,22 +3,16 @@ import { createApp } from 'vue/dist/vue.esm-bundler';
 const app = createApp({});
 
 // Importando Componentes
-import * as hc from '@/components/headerComponents.js';
-import * as pc from '@/components/pagesComponents.js';
-
-const { navbar, thefooter, routerviewpage }  = hc;
-const { menu1view, homeview, pagina01view }   = pc;
-
-const headerMap = { navbar, thefooter, routerviewpage };
-const PagesMap  = { menu1view, homeview, pagina01view };
+import headerMap from '@/components/headerComponents.js';
+import PagesMap  from '@/components/pagesComponents.js';
 
 // constante Map
-const combinedMap = {
+const ComponentsMap = {
   ...PagesMap,
-  ...headerMap
+  ...headerMap,
 };
 
-Object.entries(combinedMap).forEach(([name, component]) => {
+Object.entries(ComponentsMap).forEach(([name, component]) => {
   app.component(name, component);
 });
 
